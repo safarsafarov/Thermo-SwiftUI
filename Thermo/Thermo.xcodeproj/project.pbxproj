@@ -11,6 +11,8 @@
 		8B3D132E28F538B700B7EFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D132D28F538B700B7EFDE /* ContentView.swift */; };
 		8B3D133028F538B800B7EFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D132F28F538B800B7EFDE /* Assets.xcassets */; };
 		8B3D133328F538B800B7EFDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D133228F538B800B7EFDE /* Preview Assets.xcassets */; };
+		8B3D133A28F56CE500B7EFDE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D133928F56CE500B7EFDE /* Extensions.swift */; };
+		8B3D133C28F56EC000B7EFDE /* ClimateCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D133B28F56EC000B7EFDE /* ClimateCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		8B3D132D28F538B700B7EFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B3D132F28F538B800B7EFDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B3D133228F538B800B7EFDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B3D133928F56CE500B7EFDE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8B3D133B28F56EC000B7EFDE /* ClimateCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 			children = (
 				8B3D132B28F538B700B7EFDE /* ThermoApp.swift */,
 				8B3D132D28F538B700B7EFDE /* ContentView.swift */,
+				8B3D133928F56CE500B7EFDE /* Extensions.swift */,
 				8B3D132F28F538B800B7EFDE /* Assets.xcassets */,
 				8B3D133128F538B800B7EFDE /* Preview Content */,
+				8B3D133B28F56EC000B7EFDE /* ClimateCard.swift */,
 			);
 			path = Thermo;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B3D132E28F538B700B7EFDE /* ContentView.swift in Sources */,
+				8B3D133C28F56EC000B7EFDE /* ClimateCard.swift in Sources */,
+				8B3D133A28F56CE500B7EFDE /* Extensions.swift in Sources */,
 				8B3D132C28F538B700B7EFDE /* ThermoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
