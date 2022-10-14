@@ -20,6 +20,17 @@ struct ThermometerPlaceholderView: View {
                     .stroke(LinearGradient([.black.opacity(0.36),
                                             .white.opacity(0.11)]), lineWidth: 0.8)
             }
+            .overlay {
+                // MARK: Placeholder Inner Shadow
+                Circle()
+                    .stroke(Color("Placeholder INner Shadow"), lineWidth: 2)
+                    .blur(radius: 7)
+                    .offset(x: 0, y: 3)
+                    .mask {
+                        Circle()
+                            .fill(LinearGradient([.black, .clear], startPoint: .top, endPoint: .bottom))
+                    }
+            }
     }
 }
 
