@@ -14,7 +14,7 @@ struct ThermometerDialView: View {
     var degrees: CGFloat = 0
     
     var body: some View {
-        ZStack{
+        ZStack{ 
             // MARK: Outer Dial
             Circle()
                 .fill(LinearGradient([Color("Outer Dial 1"), Color("Outer Dial 2")]))
@@ -47,7 +47,13 @@ struct ThermometerDialView: View {
             
             // MARK: Temperature Setpoint
             Circle()
-            
+                .fill(LinearGradient([Color("Temperature Setpoint 1"),
+                                     Color("Temperature Setpoint 2")]))
+                .frame(width: setPointSize, height: setPointSize)
+                .frame(width: innerDialSize, height: innerDialSize, alignment: .top)
+                .offset(x: 0, y: 7.5)
+                .rotationEffect(.degrees(degrees + 180))
+                .animation(.easeInOut(duration: 1), value: degrees)
         }
     }
 }
