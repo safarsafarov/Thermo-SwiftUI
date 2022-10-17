@@ -7,14 +7,21 @@
 
 import SwiftUI
 
+enum Status: String {
+    case heating = "HEATING"
+    case cooling = "COOLING"
+    case reaching  = "REACHING"
+}
+
 struct ThermometerDialView: View {
+    
     private let outerDialSize: CGFloat = 200
     private let innerDialSize: CGFloat = 172
     private let setPointSize: CGFloat = 15
     var degrees: CGFloat = 0
     
     var body: some View {
-        ZStack{ 
+        ZStack{
             // MARK: Outer Dial
             Circle()
                 .fill(LinearGradient([Color("Outer Dial 1"), Color("Outer Dial 2")]))
@@ -54,6 +61,9 @@ struct ThermometerDialView: View {
                 .offset(x: 0, y: 7.5)
                 .rotationEffect(.degrees(degrees + 180))
                 .animation(.easeInOut(duration: 1), value: degrees)
+            
+            // MARK: Thermometer Dial
+            ThermometerDialView(degrees: degrees)
         }
     }
 }
