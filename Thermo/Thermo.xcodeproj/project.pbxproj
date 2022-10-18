@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B2ED10528FEA1B300EF70C9 /* SmartHomeThermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2ED10428FEA1B300EF70C9 /* SmartHomeThermostat.swift */; };
+		8B2ED10728FEA2CA00EF70C9 /* ThermometerScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */; };
 		8B3D132C28F538B700B7EFDE /* ThermoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D132B28F538B700B7EFDE /* ThermoApp.swift */; };
 		8B3D132E28F538B700B7EFDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3D132D28F538B700B7EFDE /* ContentView.swift */; };
 		8B3D133028F538B800B7EFDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B3D132F28F538B800B7EFDE /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B2ED10428FEA1B300EF70C9 /* SmartHomeThermostat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeThermostat.swift; sourceTree = "<group>"; };
+		8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermometerScaleView.swift; sourceTree = "<group>"; };
 		8B3D132828F538B700B7EFDE /* Thermo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B3D132B28F538B700B7EFDE /* ThermoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermoApp.swift; sourceTree = "<group>"; };
 		8B3D132D28F538B700B7EFDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 				8B4F972A28F67B9500C132A2 /* StartHomeThermostat.swift */,
 				8B3D133F28F594E100B7EFDE /* ThermometerPlaceholderView.swift */,
 				8BCA0F0428FC11D00030A576 /* ThermometerDialView.swift */,
+				8B2ED10428FEA1B300EF70C9 /* SmartHomeThermostat.swift */,
+				8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */,
 			);
 			path = Thermo;
 			sourceTree = "<group>";
@@ -157,7 +163,9 @@
 			files = (
 				8B3D132E28F538B700B7EFDE /* ContentView.swift in Sources */,
 				8B4F972B28F67B9500C132A2 /* StartHomeThermostat.swift in Sources */,
+				8B2ED10728FEA2CA00EF70C9 /* ThermometerScaleView.swift in Sources */,
 				8B3D133E28F594D100B7EFDE /* ThermometerView.swift in Sources */,
+				8B2ED10528FEA1B300EF70C9 /* SmartHomeThermostat.swift in Sources */,
 				8B3D134028F594E100B7EFDE /* ThermometerPlaceholderView.swift in Sources */,
 				8B3D133C28F56EC000B7EFDE /* ClimateCard.swift in Sources */,
 				8BCA0F0528FC11D00030A576 /* ThermometerDialView.swift in Sources */,
