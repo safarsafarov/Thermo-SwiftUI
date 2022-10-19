@@ -1,20 +1,19 @@
 //
-//  SmartHomeThermostat.swift
+//  ThermometerSummaryView.swift
 //  Thermo
 //
-//  Created by Safar Safarov on 18/10/22.
+//  Created by Safar Safarov on 19/10/22.
 //
 
 import SwiftUI
 
-struct SmartHomeThermostat: View {
+struct ThermometerSummaryView: View {
     var status: Status
     var showStatus: Bool
     var temperature: CGFloat
     
-    
     var body: some View {
-        VStack(spacing: 0){
+        VStack(spacing: 0) {
             // MARK: Temperature Status
             Text(status.rawValue)
                 .font(.headline)
@@ -22,8 +21,8 @@ struct SmartHomeThermostat: View {
                 .opacity(showStatus ? 0.6 : 0)
                 .animation(.easeIn(duration: 0.5), value: showStatus)
             
-            // MARK: Temperature
-            Text("\(temperature, specifier: "%.0f")")
+            // Mark Temperature
+            Text("\(temperature, specifier: "%.0f)")")
                 .font(.system(size: 54))
                 .foregroundColor(.white)
             
@@ -32,13 +31,13 @@ struct SmartHomeThermostat: View {
                 .font(.title2.bold())
                 .foregroundColor(.green)
         }
-        .padding(.top, 40)
     }
 }
 
-struct SmartHomeThermostat_Previews: PreviewProvider {
+
+struct ThermometerSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        SmartHomeThermostat(status: .heating, showStatus: true, temperature: 22)
+        ThermometerSummaryView(status: .heating, showStatus: true, temperature: 22)
             .background(Color("Inner Dial 2"))
     }
 }

@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+enum Status: String {
+    case heating = "HEATING"
+    case cooling = "COOLING"
+    case reaching = "REACHING"
+}
+
 struct ThermometerView: View {
     private let ringSize: CGFloat = 220
+    
+    
     @State private var ringValue: CGFloat = 0.5
+    @State private var degrees: CGFloat = 36
     
     var body: some View {
         ZStack {
@@ -25,6 +34,12 @@ struct ThermometerView: View {
                 .frame(width: ringSize, height: ringSize)
                 .rotationEffect(.degrees(90))
                 .animation(.linear(duration: 1), value: ringValue)
+            
+            // MARK: Thermometer Dial
+            ThermometerDialView(degrees: degrees)
+            
+            // MARk: Thermometer Summary
+            ThermometerSummaryView()
         }
     }
 }
