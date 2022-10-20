@@ -21,8 +21,8 @@ struct ThermometerSummaryView: View {
                 .opacity(showStatus ? 0.6 : 0)
                 .animation(.easeIn(duration: 0.5), value: showStatus)
             
-            // Mark Temperature
-            Text("\(temperature, specifier: "%.0f)")")
+            // MARK: Temperature
+            Text("\(temperature, specifier: "%.0f")")
                 .font(.system(size: 54))
                 .foregroundColor(.white)
             
@@ -31,13 +31,17 @@ struct ThermometerSummaryView: View {
                 .font(.title2.bold())
                 .foregroundColor(.green)
         }
+        .padding(.top, 40)
     }
 }
 
-
 struct ThermometerSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        ThermometerSummaryView(status: .heating, showStatus: true, temperature: 22)
+        ThermometerSummaryView(
+            status: .heating,
+            showStatus: true,
+            temperature: 22
+        )
             .background(Color("Inner Dial 2"))
     }
 }
