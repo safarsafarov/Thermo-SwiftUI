@@ -23,14 +23,21 @@ struct ClimateCard: View {
                     RoundedRectangle(cornerRadius: 22, style: .continuous)
                         .stroke(.white.opacity(0.1), lineWidth: 1)
                 }
+            
             VStack(spacing: 10) {
                 // MARK: Circle Icon
                 Image(systemName: iconName)
                     .font(.title2.weight(.semibold))
                     .foregroundColor(.white)
                     .frame(width: 60, height: 60)
-                    .background(LinearGradient([Color("Temperature Ring 1"),
-                                                Color("Temperature Ring 2")], startPoint: .top, endPoint: .bottom))
+                    .background(LinearGradient(
+                        [
+                            Color("Temperature Ring 1"),
+                            Color("Temperature Ring 2")
+                        ],
+                        startPoint: .top,
+                        endPoint: .bottom
+                    ))
                     .clipShape(Circle())
                 
                 VStack(spacing: 8) {
@@ -50,13 +57,17 @@ struct ClimateCard: View {
             .padding(.vertical, 20)
             .padding(.horizontal, 10)
         }
-        .frame(width: 144, height: 164)
+        .frame(width: 144, height: 144)
     }
 }
 
 struct ClimateCard_Previews: PreviewProvider {
     static var previews: some View {
-        ClimateCard(iconName: "humidity.fill", index: "Inside Humidity", measure: "50%")
+        ClimateCard(
+            iconName: "humidity.fill",
+            index: "Inside Humidity",
+            measure: "%50"
+        )
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color("Background"))
     }
