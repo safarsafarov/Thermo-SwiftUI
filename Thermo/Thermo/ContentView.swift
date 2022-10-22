@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        UINavigationBar.appearance().titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -16,18 +21,33 @@ struct ContentView: View {
                 
                 ScrollView {
                     VStack(spacing: 0) {
+                        // MARK: Thermometer
+                        ThermometerView()
+                            .padding(.top, 30)
+                            .padding(.bottom, 60)
                         // MARK: Smart Systems
+                        
                         HStack(spacing: 20) {
-                            ClimateCard(iconName: "humidity.fill", index: "Inside humidity", measure: "49%")
+                            // MARK: Humidity Card
+                            ClimateCard(
+                                iconName: "humidity.fill",
+                                index: "Inside Humidity",
+                                measure: "%49"
+                            )
                             
                             // MARK: Temperature Card
-                            ClimateCard(iconName: "thermometer", index: "Outside tetmp", measure: "-10°")
+                            ClimateCard(
+                                iconName: "thermometer",
+                                index: "Outside Temp.",
+                                measure: "-10°"
+                            )
                         }
                     }
                 }
             }
-            .navigationTitle("Thermostat")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Thermostat")
+            
         }
         .navigationViewStyle(.stack)
     }
