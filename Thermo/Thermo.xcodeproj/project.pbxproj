@@ -48,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1B264429082C7F0008AA16 /* Thermometer */ = {
+			isa = PBXGroup;
+			children = (
+				8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */,
+				8B3D133D28F594D100B7EFDE /* ThermometerView.swift */,
+			);
+			path = Thermometer;
+			sourceTree = "<group>";
+		};
 		8B3D131F28F538B700B7EFDE = {
 			isa = PBXGroup;
 			children = (
@@ -68,17 +77,16 @@
 			isa = PBXGroup;
 			children = (
 				8B3D132B28F538B700B7EFDE /* ThermoApp.swift */,
-				8B3D132D28F538B700B7EFDE /* ContentView.swift */,
+				8B1B264429082C7F0008AA16 /* Thermometer */,
 				8B3D133928F56CE500B7EFDE /* Extensions.swift */,
 				8B3D132F28F538B800B7EFDE /* Assets.xcassets */,
 				8B3D133128F538B800B7EFDE /* Preview Content */,
 				8B3D133B28F56EC000B7EFDE /* ClimateCard.swift */,
-				8B3D133D28F594D100B7EFDE /* ThermometerView.swift */,
 				8B4F972A28F67B9500C132A2 /* StartHomeThermostat.swift */,
 				8B3D133F28F594E100B7EFDE /* ThermometerPlaceholderView.swift */,
 				8BCA0F0428FC11D00030A576 /* ThermometerDialView.swift */,
-				8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */,
 				8B8F7A4128FFD821006DCDB2 /* ThermometerSummaryView.swift */,
+				8B3D132D28F538B700B7EFDE /* ContentView.swift */,
 			);
 			path = Thermo;
 			sourceTree = "<group>";
