@@ -51,10 +51,37 @@
 		8B1B264429082C7F0008AA16 /* Thermometer */ = {
 			isa = PBXGroup;
 			children = (
+				8B1B264629082CCF0008AA16 /* Dial Summary */,
+				8B1B264729082CE60008AA16 /* Dial Background */,
+				8B1B264529082CAC0008AA16 /* Dial */,
 				8B2ED10628FEA2CA00EF70C9 /* ThermometerScaleView.swift */,
 				8B3D133D28F594D100B7EFDE /* ThermometerView.swift */,
 			);
 			path = Thermometer;
+			sourceTree = "<group>";
+		};
+		8B1B264529082CAC0008AA16 /* Dial */ = {
+			isa = PBXGroup;
+			children = (
+				8BCA0F0428FC11D00030A576 /* ThermometerDialView.swift */,
+			);
+			path = Dial;
+			sourceTree = "<group>";
+		};
+		8B1B264629082CCF0008AA16 /* Dial Summary */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F7A4128FFD821006DCDB2 /* ThermometerSummaryView.swift */,
+			);
+			path = "Dial Summary";
+			sourceTree = "<group>";
+		};
+		8B1B264729082CE60008AA16 /* Dial Background */ = {
+			isa = PBXGroup;
+			children = (
+				8B3D133F28F594E100B7EFDE /* ThermometerPlaceholderView.swift */,
+			);
+			path = "Dial Background";
 			sourceTree = "<group>";
 		};
 		8B3D131F28F538B700B7EFDE = {
@@ -83,9 +110,6 @@
 				8B3D133128F538B800B7EFDE /* Preview Content */,
 				8B3D133B28F56EC000B7EFDE /* ClimateCard.swift */,
 				8B4F972A28F67B9500C132A2 /* StartHomeThermostat.swift */,
-				8B3D133F28F594E100B7EFDE /* ThermometerPlaceholderView.swift */,
-				8BCA0F0428FC11D00030A576 /* ThermometerDialView.swift */,
-				8B8F7A4128FFD821006DCDB2 /* ThermometerSummaryView.swift */,
 				8B3D132D28F538B700B7EFDE /* ContentView.swift */,
 			);
 			path = Thermo;
